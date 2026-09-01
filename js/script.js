@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update meta theme-color tag
     const metaThemeColor = document.querySelector('meta[name="theme-color"]');
     if (metaThemeColor) {
-      metaThemeColor.setAttribute('content', theme === 'dark' ? '#090d16' : '#f8fafc');
+      metaThemeColor.setAttribute('content', theme === 'dark' ? '#0d1310' : '#f4f6f3');
     }
   };
 
