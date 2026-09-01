@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#334155" stroke-width="0.8" stroke-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" rx="32" fill="url(#bgGrad)" />
+  <rect width="500" height="500" rx="32" fill="url(#grid)" />
+
+  <!-- Outer Glow Ring -->
+  <circle cx="250" cy="210" r="135" fill="none" stroke="url(#cyanGrad)" stroke-width="2" stroke-opacity="0.4" stroke-dasharray="8 6" />
+  <circle cx="250" cy="210" r="155" fill="none" stroke="url(#emeraldGrad)" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <!-- Tech Nodes -->
+  <g opacity="0.8">
+    <circle cx="120" cy="130" r="6" fill="#38bdf8" />
+    <line x1="120" y1="130" x2="170" y2="160" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="3 3" />
+    <circle cx="380" cy="130" r="6" fill="#34d399" />
+    <line x1="380" y1="130" x2="330" y2="160" stroke="#34d399" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="3 3" />
+    <circle cx="100" cy="280" r="5" fill="#f59e0b" />
+    <circle cx="400" cy="280" r="5" fill="#38bdf8" />
+  </g>
+
+  <!-- Avatar Base Silhouette & Initials -->
+  <circle cx="250" cy="210" r="110" fill="#1e293b" stroke="#334155" stroke-width="3" />
+  <circle cx="250" cy="210" r="105" fill="#0b1329" />
+
+  <!-- Data Flow Waves inside Avatar -->
+  <path d="M 170 250 Q 250 190 330 250" fill="none" stroke="url(#cyanGrad)" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+  <path d="M 185 220 Q 250 260 315 220" fill="none" stroke="url(#emeraldGrad)" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+
+  <!-- Monogram Initials -->
+  <text x="250" y="200" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="2">AHM</text>
+  <text x="250" y="235" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#38bdf8" text-anchor="middle" letter-spacing="4">DATA ENGINEER</text>
+
+  <!-- Bottom Terminal Badge -->
+  <g transform="translate(75, 385)">
+    <rect width="350" height="64" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.7" />
+    <!-- Terminal dots -->
+    <circle cx="24" cy="32" r="4.5" fill="#ef4444" />
+    <circle cx="39" cy="32" r="4.5" fill="#f59e0b" />
+    <circle cx="54" cy="32" r="4.5" fill="#10b981" />
+    <text x="74" y="38" font-family="'Courier New', monospace" font-size="14" font-weight="700" fill="#34d399">SELECT</text>
+    <text x="135" y="38" font-family="'Courier New', monospace" font-size="14" font-weight="500" fill="#f8fafc">*</text>
+    <text x="155" y="38" font-family="'Courier New', monospace" font-size="14" font-weight="700" fill="#34d399">FROM</text>
+    <text x="205" y="38" font-family="'Courier New', monospace" font-size="14" font-weight="500" fill="#38bdf8">data_pipelines</text>
+  </g>
+</svg>
